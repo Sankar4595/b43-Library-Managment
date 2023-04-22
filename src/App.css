@@ -1,0 +1,97 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+.navbar{
+  width: 100%;
+  height: 10%;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.main-body{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+}
+.home{
+  padding: 20px;
+  align-items: start ;
+}
+.title{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  font-weight: 800;
+  font-size: x-large;
+  align-items: center;
+  text-align: center;
+}
+.card-body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 25px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.card{
+  height: auto;
+  width: 250px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 10px;
+  gap: 10px;
+  box-shadow: 5px 5px 12px rgb(8, 8, 5);
+  align-items: center;
+}
+.card>img{
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0px 0px;
+}
+.btn-grp{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.add-btn{
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  text-align: center;
+}
+.new-book,.edit-book{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.view-card{
+  width: 40%;
+  min-height: 50%;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 10px;
+  gap: 10px;
+  box-shadow: 5px 5px 12px rgb(8, 8, 5);
+  align-items: center;
+}
+.view-card>img{
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0px 0px;
+}
