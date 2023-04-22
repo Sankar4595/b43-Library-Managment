@@ -12,8 +12,8 @@ export default function BaseDefault({title,styles,children,newItem}){
                 <Button onClick={()=>history.push("/")}>Home</Button>
                 <DropdownButton id="dropdown-basic-button" title="Library">
                     <Dropdown.Item onClick={()=>newItem.push("/economic")}>Economic</Dropdown.Item>
-                    <Dropdown.Item onClick={()=>newItem.push("/economic")}>History</Dropdown.Item>
-                    <Dropdown.Item onClick={()=>newItem.push("/economic")}>Tamil</Dropdown.Item>
+                    <Dropdown.Item onClick={()=>newItem.push("/history")}>History</Dropdown.Item>
+                    <Dropdown.Item onClick={()=>newItem.push("/tamil")}>Tamil</Dropdown.Item>
                 </DropdownButton>
             </div>
             <div className={styles}>{title}</div>
