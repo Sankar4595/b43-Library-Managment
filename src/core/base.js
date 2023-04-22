@@ -3,7 +3,7 @@ import React from "react";
 import { Button, Dropdown, DropdownButton } from "react-bootstrap";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
-export default function BaseDefault({title,styles,children}){
+export default function BaseDefault({title,styles,children,newItem}){
     const history = useHistory();
 
     return(
@@ -11,7 +11,7 @@ export default function BaseDefault({title,styles,children}){
             <div className="navbar">
                 <Button onClick={()=>history.push("/")}>Home</Button>
                 <DropdownButton id="dropdown-basic-button" title="Library">
-                    <Dropdown.Item href="/economic">Economic</Dropdown.Item>
+                    <Dropdown.Item onClick={()=>newItem.push("/economic")}>Economic</Dropdown.Item>
                     <Dropdown.Item href="/history">History</Dropdown.Item>
                     <Dropdown.Item href="/tamil">Tamil</Dropdown.Item>
                 </DropdownButton>
